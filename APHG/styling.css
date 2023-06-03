@@ -1,0 +1,252 @@
+.top .text h1 {
+  background-color: rgba(255, 255, 255, 0.486);
+  padding: 15px;
+}
+.top-right {
+  position: absolute;
+  top: 30px;
+  right: 16px;
+}
+.top-right a {
+  background-color: #4f647f;
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+  padding: 10px;
+  border-style: solid;
+    border-color: black;
+    border-radius: 6px;
+    transition: .5s;
+
+}
+.top-right a:hover {
+  background-color: #2d3746;
+  padding: 15px;
+  margin-left: 15px;
+  margin-right: 15px; 
+}
+.top-right .active {
+    background-color: #2d3746;
+    
+
+}
+
+.text {
+position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  
+    animation: fadein 4s;
+    -moz-animation: fadein 4s; /* Firefox */
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+    -o-animation: fadein 4s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.top .text p {
+  background-color: rgba(255, 255, 255, 0.486);
+  padding: 15px;
+  text-align: center;
+  margin: 100px;
+}
+.top .textnothome h1 {
+  background-color: rgba(255, 255, 255, 0.486);
+  padding: 15px;
+  text-align: center;
+  margin: 100px;
+}
+
+.textnothome {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+    animation: fadein 4s;
+    -moz-animation: fadein 4s; /* Firefox */
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+    -o-animation: fadein 4s; /* Opera */
+}
+
+
+.top .heroimg {
+  z-index: -1;
+  width: 100%;
+  position: relative;
+
+}
+.body ol {
+  line-height: 2em;
+   margin-right: 30px;
+  margin-left: 30px;
+
+}
+.body p {
+  text-indent: 1.5em;
+  line-height: 2em;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+.body h2 {
+  text-indent: 1.5em;
+  padding: 20px;
+  background-color: #4f647f;
+  color: white;
+}
+
+.special {
+  text-indent: none;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 270px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+///Fading thing////
+.fade {
+  opacity: 1;
+}
+
+///slideshow
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 20px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fadeforanimiation {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+
+
+//endslidewhow
+
+
+.caption {
+  border-style: solid;
+  border-color: grey;
+
+}
+h3 {font-style: italic;}
+xmp {
+  margin-left: 20px;
+  margin-right: 20px;
+ color: white;
+ background-color: black;
+}

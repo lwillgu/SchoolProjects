@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <link href="aboutstyle.css" rel="stylesheet" type="text/css" />
+        <link href="styling.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="https://docs.google.com/drawings/d/e/2PACX-1vTUUm-PHkrcqQjclck0AZJrQ5YWG3_Ex8g6YCIiCQJQ4cX0kFMtKbFembiZ2IWugNWqwzYmoxHTRY24/pub?w=876&h=712" type="image/x-icon">
+    <title>Feeding Energy To Africa</title>
+  </head>
+  
+  <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>
+             
+$(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $(".fade").each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      
+      /* If the element is completely within bounds of the window, fade it in */
+      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+      }
+    });
+  }).scroll(); //invoke scroll-handler on page-load
+});
+
+</script>
+    <div class="top">
+        <div class="top-right">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a class="active" href="stastics.html">Statistics</a>
+          <a href="scources.html">Sources</a>
+          </div>
+
+      <div class="textnothome">
+    <h1>Statistics</h1>
+      </div>
+    <img class="heroimg" src="https://docs.google.com/drawings/d/e/2PACX-1vRgzDVAhvOiFfyvsbE-KCLniSUNC0yBcXpp7a9IPwcJ9ChhL6HqJUsk9YJYj85Rp2_SK2SkzQuwAadm/pub?w=1471&h=225" >
+    </div>
+
+       <p>
+     
+      </p>
+
+
+
+
+<div class="body">
+  <div class="fade">
+  <h2>Sunlight in Africa</h2>
+  </div>
+  <div class="fade">
+    <p style="width: 500px; float: left;">Africa is in a perfect place for using the sun as a energy sources. It receives a ton of sunlight each year. According to wikipedia it recieves 60,000,000 TWh each year. That is 60% of total possible solar potitential of the whole globe. 
+  </div>
+  <div class="fade">
+    <div class="caption">
+      <img style="width:500px; float: right; margin-right: 10%;" src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Middle-East-and-North-Africa_GHI_mid-size-map_220x119mm-300dpi_v20170928.png">
+      Sunlight in middle east/north Africa
+      </div>
+  </div>
+  <h2 style="clear: left; clear: right;" class="fade">World Wide Solar Potential Energy</h2>
+<div class="fade">
+  <p style="float: left; width: 500px;">According to <a href="https://www.worldometers.info/">World Meters,</a> there is 1,006,698,349,444 Solar energy striking Earth today (MWh). And according to the same site, there is only 161,043,152 Energy used today (MWh). Clearly, if we use the full solar potoential of the sun, we would never have to use any more fossil fuels. We would never have to take another breath of bad air. We would never have to deal with global warming again. </p>
+<img src="https://www.rd.com/wp-content/uploads/2019/12/shutterstock_138195971-e1575492812271-scaled.jpg" style="width: 500px; float: right; margin-right: 10%; margin-bottom: 10%;">
+<embed style="margin-top: 20px;" src="footer.html" width="100%" height="27%">
+
+</div>
+  </body>
+</html>

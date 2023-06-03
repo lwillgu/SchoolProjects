@@ -1,0 +1,114 @@
+<html>
+  <head>
+    <link href="styling.css" rel="stylesheet" type="text/css" />
+  
+    <link rel="shortcut icon" href="https://docs.google.com/drawings/d/e/2PACX-1vTUUm-PHkrcqQjclck0AZJrQ5YWG3_Ex8g6YCIiCQJQ4cX0kFMtKbFembiZ2IWugNWqwzYmoxHTRY24/pub?w=876&h=712" type="image/x-icon">
+    <title>Feeding Energy To Africa</title>
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>
+             
+$(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $(".fade").each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      
+      /* If the element is completely within bounds of the window, fade it in */
+      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+      }
+    });
+  }).scroll(); //invoke scroll-handler on page-load
+});
+
+</script>
+
+
+    <div class="top">
+        <div class="top-right">
+          <a class="active" href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="stastics.html">Statistics</a>
+          <a href="scources.html">Sources</a>
+          </div>
+
+      <div class="text">
+    <h1>Giving Sustainablity to Developing Countries</h1>
+    <p>Mission: <i>Giving <b>clean</b> energy to those who need it</i></p>
+      </div>
+    <img class="heroimg" src="https://docs.google.com/drawings/d/e/2PACX-1vSpqshToM8mJDLzuc6UNiF_QPHW2Vd8W5ZxorUgAXYEM8BBMKGDrV8ClaEdLv_UcL8jfqF__9my9qrL/pub?w=1470&amp;h=487" >
+    </div>
+    
+
+    <div class="body">
+      <p>
+     
+      </p>
+      <div class="fade">
+      <h2 id="home">Home</h2>
+      </div>
+      <div class="fade">
+      <p style="width: 500px; float: left; height: auto;">Many countries are currently developing. An important part of this demographic change is energy in the form of electricity. But, the cheapeast and most used way to gain this electricity is through the burning of fossil fuels. This releases green house gasses, causes global warming changes and hurts our wonderful and natural environment. Many developing countries are located in Africa. This continent is centered around the equator and thefore receives a lot of harvestable energy from the sun each year. Our mission is to take advantage of this to give clean harm-free electricity to serve these countries in their developing stages. According to the <a href="https://www.worldbank.org/en/news/feature/2018/04/18/access-energy-sustainable-development-goal-7">Worldbank.org</a> electricty is very vital to economic development in countries.</p> 
+      </div>
+      <div class="fade">
+      <iframe style="float: right; width: 500px; height: 65%; margin-right: 10%; border: none; overflow:hidden;" scrolling="no" src="slideshow.html"></iframe>
+      <br>
+      </div>
+<div style="width: 100% height: 30px; clear: left; clear: right;"></div>
+
+      <div class="fade">
+      <h2 style="clear: left;">Why Donate?</h2>
+      </div>
+      <div class="fade">
+        <div style="float: left; width: 800px;">
+     <p>One of the goals made at the beginning of this generation was to reach a sustainable environment. Giving these developing countries a head start with renewable and sustainable resources will help these countries reach this goal. Donating to this cause will not only: </p>
+     <b>
+       <ol>
+         <li>Give you nice tax reductions</li>
+         <li>Put unused money to a great cause</li>
+         <li>Save the environment</li>
+         <li>Help the world</li>
+       </ol>
+       </div>
+       <iframe scrolling="no" id="donate" src="https://donate-to-aphg-thing.lanceguthrie.repl.co/" style="float: left; margin-left: 10%; height: 30%; border-color: #4f647f; border-style: solid; border-width: 5px; border-radius: 10px;"></iframe>
+       <div style="clear: right; clear: left;"></div>
+       </b>
+       <p class="special"> but it will also help other countries such as the United States of America, and other developed countries reach this green energy point as well. Your donations will be used with everyone in mind, and they can come back to help your country as well. </p>
+       </div>
+       <h2 class="fade">Funding Plan</h2>
+      
+
+
+<p style="clear: both;"></p>
+
+  <div class="fade">
+      <img style="width:500px; float: left; margin-left: 2%;" src="https://www.usaid.gov/sites/default/files/nodeimage/Partners-Banner-Light-Blue.png">
+       </div>
+
+        <div class="fade">
+    <p style="width: 700px; float: left; margin-left: 5%;">We use donations to buy these first solar panels. We install them on solar farms and sell the energy to African Power Suppliers. The money we recieve from that is only used to buy even more solar panels. We have started small, but we will get bigger. To start, we need about 10,000 dollars, we need it for transport and the cost of solar panels. At first, we will not install them on farms. After out NGO has grown a bit more, we will be able to purchase african land. But, for now, we will give them to houseolds and farms, not owned by us.    </p>
+  </div>
+  <br>
+  <br>
+<div style="clear: left; clear: right; height: 250px;"></div>
+
+<h2 class="fade" style="clear: left; clear: right;">Fundraising Ideas</h2>  
+<div class="fade">
+<p><ol>
+  <li>There are many Solar installers in the devoloped world. We have contacted them, asking for their coorperation and support of our humanitarian project. They tell their customers about us, and our mission. Their customers are usually enthusiastic; they already understand the importance of our environment and the potential of solar panels. We receive many donations that way.</li>
+  <li>More ways could be newspaper ads or energy convservation conferences....</li>
+  </ol>
+</p>
+</div>
+
+<iframe style="margin-top: 20px; border: none;" src="footer.html" width="100%" scrolling="no" height="27%"></iframe>
+  </div>
+
+    </body>
+
+    </html>
