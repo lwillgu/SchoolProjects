@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title>Drugs- The Real Story</title>
+<meta charset="UTF-8">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="icon" 
+      type="image/png" 
+      href="https://docs.google.com/drawings/d/e/2PACX-1vRQdlpvvoxZFiWRswhEvXszMFUE1TsLerSxThRhX5wFa4M9iOxZTtfdXOQa5Rm-HDED7sRvagD-4oYX/pub?w=240&h=240">	
+
+
+<style>
+  p {
+    text-indent: 1.5em;
+    line-height: 2em;
+  }
+  .bw {
+    filter: brightness(70%) grayscale(100%);
+
+  }
+  ul {
+    line-height: 2em;
+  }
+   ol {
+    line-height: 2em;
+  }
+  .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  padding-top: 20px;
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+ 
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #D3D3D3;
+  color: #404040;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #D3D3D3;
+  color: #404040;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+ 
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.border {
+  border-style: solid;
+  border-color: #D3D3D3;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.centered {
+  text-align: center;
+}
+.centerdrug {
+    display: flex;
+  justify-content: center;
+}
+
+.pushright {
+  float: left;
+  margin-left: 5%;
+ 
+}
+
+
+ .imgwtext p {
+  width: 100%;
+  text-indent: 0;
+  text-align: center;
+}
+
+.imgwtext img {
+  width: 380px;
+}
+
+.textwimage {
+  width: 60%;
+
+}
+
+.imgwtext {
+  border-style: none none solid none;
+border-color: #EEEEEE;
+}
+
+.pushleft {
+  float: left;
+}
+
+
+
+  </style>
+  </head>
+  <script>
+   function openModal(drug) {
+    document.getElementById(drug).style.display = "block";
+    
+   }
+function closeModal(drug) {
+      document.getElementById(drug).style.display = "none";
+
+}
+
+    </script>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><img src="https://docs.google.com/drawings/d/e/2PACX-1vRQdlpvvoxZFiWRswhEvXszMFUE1TsLerSxThRhX5wFa4M9iOxZTtfdXOQa5Rm-HDED7sRvagD-4oYX/pub?w=480&h=480" width="30px" style="margin-right: 10px;"><b>Drugs</b> The Real Story</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#effects" class="w3-bar-item w3-button">Effects</a>
+      <a href="#recovery" class="w3-bar-item w3-button">Recovery</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image bw" src="https://s18670.pcdn.co/wp-content/uploads/prescription-drug-safety-main-image.jpg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 data-aos="zoom-in" data-aos-duration="1000"
+ class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Drugs</b></span> <span class="w3-hide-small w3-text-light-grey">The Real Story</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+   
+  <!-- Project Section -->
+  <div data-aos="fade-up" data-aos-offset="400" data-aos-delay="100"
+class="w3-container w3-padding-32" style="scroll-margin-top: 2em;" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <div class="textwimage pushleft">
+    <p >This is designed to help inform drug users about what they are actually taking. A lot of drug users trust their 'street buddies' a little too much. So, here is the truth about drugs. Everything here is straight and forward; these are only facts, from trusty sources. </p>
+    <p> So who will you trust? This trusty source-cited free website? Or your freind who lives in the city's dumpster? 
+    </p>
+</div>
+    <div style="" class="imgwtext pushright ">
+    <img src="https://jobsiterentalpros.com/wp-content/uploads/2020/01/Roll-Off-Dumpster-Rental-Overfilled-Jobsite-Rental-Pros.png">
+    <p><i>Is this their home? Photo from jobsiterentalpros.com </i> </p>
+  </div>
+     
+  </div>
+
+
+
+
+
+<div data-aos="fade-up" data-aos-offset="400" data-aos-delay="100" class="w3-container w3-padding-32">
+     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Why do people use drugs?</h3>
+
+  <div class="pushleft imgwtext">
+      <img src="https://docs.google.com/drawings/d/e/2PACX-1vRslYHBT6rcSfqfDvrNLerzoKl-ywUZaqvV3Hh3lyo3cqxAZQc1xQsfO0ob3SJbPMNHC_BzrlCi-p-S/pub?w=1010&h=978">
+      <p><i>Somebody in much pain, dreaming of taking bad drugs</i></p>
+      </div>
+
+
+<div  class="textwimage pushright">
+ <p>
+      There are a lot of reasons why people take drugs. 
+      <ul>
+        <li>They are delirous with pain, they belive anything their told.</li>
+        <li>They are doing what their freinds are doing. They might feel pressured to do things that their freinds do, in order to be cool.</li>
+        <li>They just don't see the whole future. If you look right in front- above the hood- while driving, your going to make you passengers sick. The same is true with your life. If you only see temporary happiness in front, you will drive crooked.</li>
+        </ul><br>
+        It's Important to understand motives of people who take drugs, in order to help them to recover.
+    </p>
+
+  </div>
+    </div>
+
+
+
+
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="effects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Effects</h3>
+    <p>
+      
+    </p>
+  </div>
+
+  <div  class="w3-row-padding w3-grayscale centerdrug">
+    <div data-aos="fade-left" data-aos-duration="2000" class="w3-col l3 m6 w3-margin-bottom border">
+            <h3 style="margin-top: 20px;" class="centered  w3-light-grey">Cocaine</h3>
+
+      <img src="/health/cocain.png" alt="Cocaine" style="width:100%">
+      <p>In short, Cocaine is a deadly substance. It releases too much dopamine, which dammages your ability to do that natrually. It causes your body to work overtime, which caues many issues in your circlatory system</p>
+      <p><button onclick="openModal('cocain')" class="w3-button w3-light-grey w3-block">More</button></p>
+    </div>
+
+
+     <div data-aos="flip-up" data-aos-duration="1500"class="w3-col l3 m6 w3-margin-bottom border">
+      <h3 style="margin-top: 20px;" class="centered  w3-light-grey">Heroin</h3>
+      <img src="https://www.drugabuse.gov/sites/default/files/styles/content_image_medium/public/heroin_powder.jpg?itok=0Rs6aZkF" alt="Heroin Photo" style="width:100%">
+     
+      <p>Heroin is an extremly addictive drug. This drug is also classified as an opoid. This drug can cause many things, such as brain damage, heart damage, and lung damage. Even though this drug is made from beatiful flowers, it can and will harm you in lethal ways. To learn more about the effects of this drug, click below.</p>
+      <p><button onclick="openModal('heroin')" class="w3-button w3-light-grey w3-block">More</button></p>
+    </div>
+
+
+    <div data-aos="flip-right" data-aos-duration="1500"class="w3-col l3 m6 w3-margin-bottom border">
+       <h3 style="margin-top: 20px;" class="centered  w3-light-grey">Methamphetamine</h3>
+      <img src="https://www.drugabuse.gov/sites/default/files/styles/content_image_smaller/public/crystal_meth_dea.jpg?itok=SD1lVKoZ" alt="meth" style="width:100%">
+     
+      <p>Meth can be smoked, sniffed or injected. However, it should not be. Most of this is made illigally and secretly imported from other countries. Meth is very harmful to your body. This leads to the 'meth mouth' issue. This subtance can often cause memory loss and unhealthy weight loss. Click below to learn more. </p>
+      <p><button onclick="openModal('meth')" class="w3-button w3-light-grey w3-block">More</button></p>
+    </div>
+  </div>
+
+
+    <div class="w3-row-padding w3-grayscale centerdrug">
+
+
+
+    <div data-aos="flip-left"data-aos-duration="1500" class="w3-col l3 m6 w3-margin-bottom border">
+      <h3 style="margin-top: 20px;" class="centered  w3-light-grey">Ecstasy</h3>
+      <img src="https://www.drugabuse.gov/sites/default/files/styles/content_image_smaller/public/images/off_white_triangular_tablet_marked_fromDEA.jpg?itok=j2h4pFDN" alt="ectasy" style="width:100%">
+      <p>Ectasy is known as 'molly' or in the medical world MDMA. This is a very synthetic drug. This drug messes with the mind and the body. Long term use can lead to blood issues leading to organ failure and or death. </p>
+      <p><button onclick="openModal('ectasy')" class="w3-button w3-light-grey w3-block">More</button></p>
+    </div>
+
+
+
+    <div data-aos="flip-down" data-aos-duration="1500" class="w3-col l3 m6 w3-margin-bottom border">
+      <h3 style="margin-top: 20px;" class="centered  w3-light-grey">Marijana</h3>
+      <img src="https://www.drugabuse.gov/sites/default/files/styles/content_image_medium/public/2020-01/marijuana-leaf-from-nida-farm.jpg?itok=cSsV6iD_" alt="marijana" style="width:100%">
+      <p>Marijana is dried parts of <i> Cannabis sativa </i>or <i>Cannabis indica</i> plants. This drug is the most addictive one used after alcohol and tabacoo. THC is the chemical from Marijana that affects your brain. This chemical affects your brain in many different ways.  </p>
+      <p><button onclick="openModal('marijana')" class="w3-button w3-light-grey w3-block">More</button></p>
+    </div>
+
+
+
+
+<div data-aos="flip-right" data-aos-duration="1500" class="w3-col l3 m6 w3-margin-bottom border">
+
+  <h3 style="margin-top: 20px;" class="centered  w3-light-grey">LSD</h3>
+      <p>LSD is a hallucinogenic drug. These types of drugs are really evil. They can create places in your mind. They make hallucenations. They make you think and feel things that aren't really there. Sometimes, they can take you on 'trips'. Sometimes these trips are enjoyable, but sometiems they are a nightmare. They can even end in death. Hallucinogenic is a very <b>VERY</b> nasty substance.</p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p><button onclick="openModal('lsd')" class="w3-button w3-light-grey w3-block">More</button></p>
+    </div>
+
+  </div>
+
+
+  <!-- recovery Section -->
+  <div data-aos="fade-up"  data-aos-delay="100"
+class="w3-container w3-padding-32" style="scroll-margin-top: 7em;"id="recovery">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Recovery</h3>
+    <p style="width: 90%;">Let's face it. Drugs are evil. To combat this you will need help from God. It's like math (algebra, specifically) when solving for <i>x</i>, you do the inverse of opperations. If <i>x</i> is smothered in evilness, then give it love, hope and blessings from God, and your problems with drugs can be solved.   </p>
+    <p><i><b>This is often called the 12-step program.</b> If you follow the steps correctly, you can obtain freedom from your addiction.</i></p>
+        <div class="pushleft textwimage">
+
+    <ol>
+      <li>Admitting powerlessness over the addiction</li>
+      <li>Believing that God can help</li>
+      <li>Deciding to turn control over to God</li>
+      <li>Taking a personal inventory</li>
+      <li>Admitting to God, oneself, and another person the wrongs done</li>
+      <li>Being ready to have God correct any shortcomings in one’s character
+</li>
+      <li>Asking God to remove those shortcomings
+</li>
+      <li>Making a list of wrongs done to others and being willing to make amends for those wrongs
+</li>
+      <li>Contacting those who have been hurt, unless doing so would harm the person
+</li>
+      <li>Continuing to take personal inventory and admitting when one is wrong
+</li>
+      <li>Seeking his will and connection with God via prayer and meditation
+</li>
+      <li>Carrying the message of the 12 Steps to others in need
+</li>
+      </ol>
+    </div>
+    <div class="pushright imgwtext">
+      <img src="data:image/jpeg;base64,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">
+      <p><i>Image depecting hope</i></p>
+      </div>
+      
+      <p style="clear: both;"><i>Source: <a href="https://americanaddictioncenters.org/rehab-guide/12-step">Americanaddictioncenters.org</a> and <a href="https://www.churchofjesuschrist.org/study/manual/addiction-recovery-program-a-guide-to-addiction-recovery-and-healing/the-12-steps?lang=eng">Church Of Jesus Christ of Latter Day Saints</a></i></p>
+      <p><b> I belive that the 12 steps is the best way to overcome any addiction. </b>There are also many rehab centers, health hot-lines and many people, waiting to help you. They can walk you through many different methods and can also help manage and control your addiction. Feel free to follow any of the links, they are there to help you.</p>
+      <p>SAMHSA’s hot-line <b><a href="tel:18006624357">1-800-662-HELP (4357)</a></b></p>
+
+  </div>
+  
+<!-- Image of location/map -->
+<div class="w3-container">
+
+  </div>
+
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+
+<div class="w3-card" style="margin-left: 30%; margin-right: 30%;">
+  <h4 style="text-align: center;">Sources Used:</h4>
+  <ul>
+    <li><a href="https://www.dea.gov/sites/default/files/2020-06/Cocaine-2020_1.pdf">dea.gov</a></li>
+    <li><a href="https://www.drugabuse.gov/">Drugabuse.gov</a></li>
+    <li><a href="https://www.verywellmind.com/common-street-names-for-cocaine-66696">VeryWellmind.com</a></li>
+    <li><a href="https://americanaddictioncenters.org/rehab-guide/12-step">AmericanAddictionCenters.org</a></li>
+    <li><a href="https://www.samhsa.gov/find-help/national-helpline">Samhsa.gov</a></li>
+
+    </ul>
+  </div>
+   <div class="w3-card" style="margin-left: 10%; margin-right: 10%;">
+     <h4 style="text-align: center;">Paragraph Project Writeup</h4><p style="margin: 15px;">
+     Many people don't understand what drugs really do to you. Many people take them because they are in the dark of what they are taking. Some of them think that prescription drugs for one person are safe for everybody. This is of course not true. I created this website to help show people and help them understand all of the effects of taking drugs. I believe that if they understand all of the consequences, especially the long-term consequences, then the drugs won't be used and abused so much, or at all. I don't believe most people are taking drugs knowing the consequences of this in the future. If our society, as a whole, can help these people who are taking drugs learn about them, then I think a lot of good things would follow. I think it would bring an end to most crime in a lot of cities. I think that it could help eliminate a lot of nasty diseases that are caused by drugs. It could lead to longer lives. It would also save a lot of people a lot of money. I'll bet a lot of people spend a large amount of money on drugs. That might give them a lot of financial trouble. So, with education of drugs, which is what my project is all about, it could save our society in so many ways, and improve it in every other way. </p>Sources are above.
+     </div>
+
+<footer class="w3-center w3-black w3-padding-16">
+  <p>End of Content; but, take a moment to appreciate everything typed below. It took a long long time. p>
+  
+</footer>
+  <div class="w3-card" >
+  <xmp>
+    <!DOCTYPE html>
+<html>
+  <head>
+<title>Drugs- The Real Story</title>
+<meta charset="UTF-8">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="icon" 
+      type="image/png" 
+      href="https://docs.google.com/drawings/d/e/2PACX-1vRQdlpvvoxZFiWRswhEvXszMFUE1TsLerSxThRhX5wFa4M9iOxZTtfdXOQa5Rm-HDED7sRvagD-4oYX/pub?w=240&h=240">	
+
+
+<style>
+  p {
+    text-indent: 1.5em;
+    line-height: 2em;
+  }
+  .bw {
+    filter: brightness(70%) grayscale(100%);
+
+  }
+  ul {
+    line-height: 2em;
+  }
+   ol {
+    line-height: 2em;
+  }
+  .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  padding-top: 20px;
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+ 
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #D3D3D3;
+  color: #404040;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #D3D3D3;
+  color: #404040;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+ 
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.border {
+  border-style: solid;
+  border-color: #D3D3D3;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.centered {
+  text-align: center;
+}
+.centerdrug {
+    display: flex;
+  justify-content: center;
+}
+
+.pushright {
+  float: left;
+  margin-left: 5%;
+ 
+}
+
+
+ .imgwtext p {
+  width: 100%;
+  text-indent: 0;
+  text-align: center;
+}
+
+.imgwtext img {
+  width: 380px;
+}
+
+.textwimage {
+  width: 60%;
+
+}
+
+.imgwtext {
+  border-style: none none solid none;
+border-color: #EEEEEE;
+}
+
+.pushleft {
+  float: left;
+}
+
+
+
+  </style>
+  </head>
+  <script>
+   function openModal(drug) {
+    document.getElementById(drug).style.display = "block";
+    
+   }
+function closeModal(drug) {
+      document.getElementById(drug).style.display = "none";
+
+}
+
+    </script>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><img src="https://docs.google.com/drawings/d/e/2PACX-1vRQdlpvvoxZFiWRswhEvXszMFUE1TsLerSxThRhX5wFa4M9iOxZTtfdXOQa5Rm-HDED7sRvagD-4oYX/pub?w=480&h=480" width="30px" style="margin-right: 10px;"><b>Drugs</b> The Real Story</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#effects" class="w3-bar-item w3-button">Effects</a>
+      <a href="#recovery" class="w3-bar-item w3-button">Recovery</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image bw" src="https://s18670.pcdn.co/wp-content/uploads/prescription-drug-safety-main-image.jpg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 data-aos="zoom-in" data-aos-duration="1000"
+ class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Drugs</b></span> <span class="w3-hide-small w3-text-light-grey">The Real Story</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+   
+  <!-- Project Section -->
+  <div data-aos="fade-up" data-aos-offset="400" data-aos-delay="100"
+class="w3-container w3-padding-32" style="scroll-margin-top: 2em;" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <div class="textwimage pushleft">
+    <p >This is designed to help inform drug users about what they are actually taking. A lot of drug users trust their 'street buddies' a little too much. So, here is the truth about drugs. Everything here is straight and forward; these are only facts, from trusty sources. </p>
+    <p> So who will you trust? This trusty source-cited free website? Or your freind who lives in the city's dumpster? 
+    </p>
+</div>
+    <div style="" class="imgwtext pushright ">
+    <img src="https://jobsiterentalpros.com/wp-content/uploads/2020/01/Roll-Off-Dumpster-Rental-Overfilled-Jobsite-Rental-Pros.png">
+    <p><i>Is this their home? Photo from jobsiterentalpros.com </i> </p>
+  </div>
+     
+  </div>
+
+
+
+
+
+<div data-aos="fade-up" data-aos-offset="400" data-aos-delay="100" class="w3-container w3-padding-32">
+     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Why do people use drugs?</h3>
+
+  <div class="pushleft imgwtext">
+      <img src="https://docs.google.com/drawings/d/e/2PACX-1vRslYHBT6rcSfqfDvrNLerzoKl-ywUZaqvV3Hh3lyo3cqxAZQc1xQsfO0ob3SJbPMNHC_BzrlCi-p-S/pub?w=1010&h=978">
+      <p><i>Somebody in much pain, dreaming of taking bad drugs</i></p>
+      </div>
+
+
+<div  class="textwimage pushright">
+ <p>
+      There are a lot of reasons why people take drugs. 
+      <ul>
+        <li>They are delirous with pain, they belive anything their told.</li>
+        <li>They are doing what their freinds are doing. They might feel pressured to do things that their freinds do, in order to be cool.</li>
+        <li>They just don't see the whole future. If you look right in front- above the hood- while driving, your going to make you passengers sick. The same is true with your life. If you only see temporary happiness in front, you will drive crooked.</li>
+        </ul><br>
+        It's Important to understand motives of people who take drugs, in order to help them to recover.
+    </p>
+
+  </div>
+    </div>
+
+
+
+
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="effects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Effects</h3>
+    <p>
+      
+    </p>
+  </div>
+
+  <div  class="w3-row-padding w3-grayscale centerdrug">
+    <div data-aos="fade-left" data-aos-duration="2000" class="w3-col l3 m6 w3-margin-bottom border">
+            <h3 style="margin-top: 20px;" class="centered  w3-light-grey">Cocaine</h3>
+
+      <img src="/health/cocain.png" alt="Cocaine" style="width:100%">
+      <p>In short, Cocaine is a deadly substance. It releases too much dopamine, which dammages your ability to do that natrually. It causes your body to work overtime, which caues many issues in your circlatory system</p>
+      <p><button onclick="openModal('cocain')" class="w3-button w3-light-grey w3-block">More</button></p>
+    </div>
+
+
+     <div data-aos="flip-up" data-aos-duration="1500"class="w3-col l3 m6 w3-margin-bottom border">
+      <h3 style="margin-top: 20px;" class="centered  w3-light-grey">Heroin</h3>
+      <img src="https://www.drugabuse.gov/sites/default/files/styles/content_image_medium/public/heroin_powder.jpg?itok=0Rs6aZkF" alt="Heroin Photo" style="width:100%">
+     
+      <p>Heroin is an extremly addictive drug. This drug is also classified as an opoid. This drug can cause many things, such as brain damage, heart damage, and lung damage. Even though this drug is made from beatiful flowers, it can and will harm you in lethal ways. To learn more about the effects of this drug, click below.</p>
+      <p><button onclick="openModal('heroin')" class="w3-button w3-light-grey w3-block">More</button></p>
+    </div>
+
+
+    <div data-aos="flip-right" data-aos-duration="1500"class="w3-col l3 m6 w3-margin-bottom border">
+       <h3 style="margin-top: 20px;" class="centered  w3-light-grey">Methamphetamine</h3>
+      <img src="https://www.drugabuse.gov/sites/default/files/styles/content_image_smaller/public/crystal_meth_dea.jpg?itok=SD1lVKoZ" alt="meth" style="width:100%">
+     
+      <p>Meth can be smoked, sniffed or injected. However, it should not be. Most of this is made illigally and secretly imported from other countries. Meth is very harmful to your body. This leads to the 'meth mouth' issue. This subtance can often cause memory loss and unhealthy weight loss. Click below to learn more. </p>
+      <p><button onclick="openModal('meth')" class="w3-button w3-light-grey w3-block">More</button></p>
+    </div>
+  </div>
+
+
+    <div class="w3-row-padding w3-grayscale centerdrug">
+
+
+
+    <div data-aos="flip-left"data-aos-duration="1500" class="w3-col l3 m6 w3-margin-bottom border">
+      <h3 style="margin-top: 20px;" class="centered  w3-light-grey">Ecstasy</h3>
+      <img src="https://www.drugabuse.gov/sites/default/files/styles/content_image_smaller/public/images/off_white_triangular_tablet_marked_fromDEA.jpg?itok=j2h4pFDN" alt="ectasy" style="width:100%">
+      <p>Ectasy is known as 'molly' or in the medical world MDMA. This is a very synthetic drug. This drug messes with the mind and the body. Long term use can lead to blood issues leading to organ failure and or death. </p>
+      <p><button onclick="openModal('ectasy')" class="w3-button w3-light-grey w3-block">More</button></p>
+    </div>
+
+
+
+    <div data-aos="flip-down" data-aos-duration="1500" class="w3-col l3 m6 w3-margin-bottom border">
+      <h3 style="margin-top: 20px;" class="centered  w3-light-grey">Marijana</h3>
+      <img src="https://www.drugabuse.gov/sites/default/files/styles/content_image_medium/public/2020-01/marijuana-leaf-from-nida-farm.jpg?itok=cSsV6iD_" alt="marijana" style="width:100%">
+      <p>Marijana is dried parts of <i> Cannabis sativa </i>or <i>Cannabis indica</i> plants. This drug is the most addictive one used after alcohol and tabacoo. THC is the chemical from Marijana that affects your brain. This chemical affects your brain in many different ways.  </p>
+      <p><button onclick="openModal('marijana')" class="w3-button w3-light-grey w3-block">More</button></p>
+    </div>
+
+
+
+
+<div data-aos="flip-right" data-aos-duration="1500" class="w3-col l3 m6 w3-margin-bottom border">
+
+  <h3 style="margin-top: 20px;" class="centered  w3-light-grey">LSD</h3>
+      <p>LSD is a hallucinogenic drug. These types of drugs are really evil. They can create places in your mind. They make hallucenations. They make you think and feel things that aren't really there. Sometimes, they can take you on 'trips'. Sometimes these trips are enjoyable, but sometiems they are a nightmare. They can even end in death. Hallucinogenic is a very <b>VERY</b> nasty substance.</p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p><button onclick="openModal('lsd')" class="w3-button w3-light-grey w3-block">More</button></p>
+    </div>
+
+  </div>
+
+
+  <!-- recovery Section -->
+  <div data-aos="fade-up"  data-aos-delay="100"
+class="w3-container w3-padding-32" style="scroll-margin-top: 7em;"id="recovery">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Recovery</h3>
+    <p style="width: 90%;">Let's face it. Drugs are evil. To combat this you will need help from God. It's like math (algebra, specifically) when solving for <i>x</i>, you do the inverse of opperations. If <i>x</i> is smothered in evilness, then give it love, hope and blessings from God, and your problems with drugs can be solved.   </p>
+    <p><i><b>This is often called the 12-step program.</b> If you follow the steps correctly, you can obtain freedom from your addiction.</i></p>
+        <div class="pushleft textwimage">
+
+    <ol>
+      <li>Admitting powerlessness over the addiction</li>
+      <li>Believing that God can help</li>
+      <li>Deciding to turn control over to God</li>
+      <li>Taking a personal inventory</li>
+      <li>Admitting to God, oneself, and another person the wrongs done</li>
+      <li>Being ready to have God correct any shortcomings in one’s character
+</li>
+      <li>Asking God to remove those shortcomings
+</li>
+      <li>Making a list of wrongs done to others and being willing to make amends for those wrongs
+</li>
+      <li>Contacting those who have been hurt, unless doing so would harm the person
+</li>
+      <li>Continuing to take personal inventory and admitting when one is wrong
+</li>
+      <li>Seeking his will and connection with God via prayer and meditation
+</li>
+      <li>Carrying the message of the 12 Steps to others in need
+</li>
+      </ol>
+    </div>
+    <div class="pushright imgwtext">
+      <img src="data:image/jpeg;base64,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">
+      <p><i>Image depecting hope</i></p>
+      </div>
+      
+      <p style="clear: both;"><i>Source: <a href="https://americanaddictioncenters.org/rehab-guide/12-step">Americanaddictioncenters.org</a> and <a href="https://www.churchofjesuschrist.org/study/manual/addiction-recovery-program-a-guide-to-addiction-recovery-and-healing/the-12-steps?lang=eng">Church Of Jesus Christ of Latter Day Saints</a></i></p>
+      <p><b> I belive that the 12 steps is the best way to overcome any addiction. </b>There are also many rehab centers, health hot-lines and many people, waiting to help you. They can walk you through many different methods and can also help manage and control your addiction. Feel free to follow any of the links, they are there to help you.</p>
+      <p>SAMHSA’s hot-line <b><a href="tel:18006624357">1-800-662-HELP (4357)</a></b></p>
+
+  </div>
+  
+<!-- Image of location/map -->
+<div class="w3-container">
+
+  </div>
+
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Sources used:</p>
+  
+</footer>
+<div class="w3-card" style="margin-left: 30%; margin-right: 30%;">
+  <ul>
+    <li><a href="https://www.dea.gov/sites/default/files/2020-06/Cocaine-2020_1.pdf">dea.gov</a></li>
+    <li><a href="https://www.drugabuse.gov/">Drugabuse.gov</a></li>
+    <li><a href="https://www.verywellmind.com/common-street-names-for-cocaine-66696">VeryWellmind.com</a></li>
+    <li><a href="https://americanaddictioncenters.org/rehab-guide/12-step">AmericanAddictionCenters.org</a></li>
+    <li><a href="https://www.samhsa.gov/find-help/national-helpline">Samhsa.gov</a></li>
+
+    </ul>
+  </div>
+
+
+  <div class="w3-card" style="margin-left: 30%; margin-right: 30%;">
+  
+  </div>
+
+
+
+
+<!-- Modals -->
+
+
+
+<!-- Cocain-->
+
+<div id="cocain" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span onclick="closeModal('cocain')" class="close">&times;</span>
+      <h2>Cocaine- More Info</h2>
+    </div>
+    <div class="modal-body">
+    
+      <div class="row">
+  <div class="column">
+    <h4>Short Term</h4>
+   <i>If taken in very small amounts</i>
+<ol>
+        <li>Makes you very alert and very talkative</li>
+        <li>Reduces need for sleep and food.</li>
+        <li>Hypersensetive</li>
+        <li>Increased heart rate and blood pressure</li>
+        <li>Muscle twitches</li>
+        <li>Constrictred blood vessels</li>
+        </ol>
+   
+  </div>
+     <div class="column" >
+           <h4>Long Term</h4>
+           <p>There are many bad effects on a lot of vital organs </p>
+           <ol>
+             <li>Brain- With repeated use, this can stop dopamine from being produced natrually.</li>
+             <li>Heart- Makes it age much faster. It forces the circulatory system to work overtime- causes heart disease, constricts blood vessels, increase blood pressure.</li>
+             <li>Lungs- lung damgae. Shortness of breath, chest pain, and disease and illness such as pneumonia and other chronic ilnesses.</li>
+             </ol>
+              
+          </div>
+        
+          
+        </div>
+      
+    </div>
+      <h3 class="modal-footer">Conclusion</h3>
+          <div class="modal-body">
+
+        <p>Cocaine is clearly really bad for you. As you can tell, if you only look at the short terms, you could think that it wasn't deadly. Looking at the long term conditions, you are able to tell that <b>Cocaine is in fact a deadly substance.</b></p>
+        
+     <center> <a href="https://vertavahealth.com/cocaine/long-term-effects/">More Info</a></center>
+    </div>
+  </div>
+
+</div>
+
+
+
+<!--Heroin-->
+<div id="heroin" class="modal">
+
+ <div class="modal-content">
+    <div class="modal-header">
+      <span onclick="closeModal('heroin')" class="close">&times;</span>
+      <h2>Heroin- More Info</h2>
+          </div>
+    <div class="modal-body">
+      <div class="row">
+        <div class="column">
+          <h4>Short term Effects</h4>
+          <ol>
+            <li>Dry mouth</li>
+         <li>Warm flushing of the skin</li>
+        <li>Heavy feeling in the arms and legs</li>
+        <li>Nausea and vomiting</li>
+        <li>Severe itching</li>
+        <li>Clouded mental functioning</li>
+        </ol>
+        <p><i>Directly From <a href="https://www.drugabuse.gov/publications/drugfacts/heroin">drugabuse.gove</a></i></p>
+          </div>
+          <div class="column">
+            <h4>Long term Effects</h4>
+            <ol>
+             <li>Vein Damage- Viens can collapse from injection</li>
+          <li>Neisel Damage- Nose and mouth can be damaged from sniffing/inhaling it</li>
+          <li>Heart- Infection of the lining</li>
+          <li>Liver and kidney disease</li>
+          <li>Reproductive system issues</li>
+          </ol>
+          </div>
+        </div>
+
+      
+              
+    </div>
+        
+          
+        
+      <h3 class="modal-footer">Conclusion</h3>
+    
+<div class="modal-body">
+         
+  <p>Heroin is a very addictive substance. It diseases a lot of important organs. Heroin is also many times mixed with other bad substances, when sold on the street. </p>
+
+        
+     <center> <a href="https://www.drugabuse.gov/publications/drugfacts/heroin">More Info</a></center>
+    </div>
+  </div>
+
+</div>
+
+
+
+<!-- Meth -->
+<div id="meth" class="modal">
+
+ <div class="modal-content">
+    <div class="modal-header">
+      <span onclick="closeModal('meth')" class="close">&times;</span>
+      <h2>Methamphetamine- More Info</h2>
+    </div>
+    <div class="modal-body">
+      <div class='row'>
+        <div class="column">
+          <h4>Short term effects</h4>
+          <ol>
+<li>decreased appetite</li>
+<li>faster breathing</li>
+<li>rapid and/or irregular heartbeat</li>
+<li>increased blood pressure and body temperature </li>
+</ol>
+        </div>
+        <div class="column">
+          <ol>
+            <li>Exetreme dental issues (meth mouth)</li>
+            <li>Confuesion</li>
+            <li>Memory Loss</li>
+            <li>violent behavior</li>
+            <li>Distress of others</li>
+            <li>hallucinations</li>
+            </ol>
+          </div>
+      </div>
+
+
+      
+              
+    </div>
+        
+          
+        
+      <h3 class="modal-footer">Conclusion</h3>
+    
+<div class="modal-body">
+        <p>Meth is a very harmful substance. This drug doesn't only affect your brain, but also your more phisical being. It seems to destroy anyting that it touches. Don't let it touch you!</p>
+    
+     <center> <a href="https://www.drugabuse.gov/publications/drugfacts/name">More Info</a></center>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- ectasy -->
+<div id="ectasy" class="modal">
+
+ <div class="modal-content">
+    <div class="modal-header">
+      <span onclick="closeModal('ectasy')" class="close">&times;</span>
+      <h2>Ectasy- More Info</h2>
+      
+    </div>
+    <div class="modal-body">
+      <p>This drug is also known as MDMA. This drugs mostly hurts and affects emotions, feelings, and heart rate blood pressure. Most of the effects are very severe:</p>
+      <ol>
+        <li>sweating</li>
+        <li>blurred vision</li>
+        <li>anxiety</li>
+        <li>Regulation Tempeture</li>
+        <li>Liver/Kidney/Heart- Organ Failure</li>
+
+        </ol>
+              
+    </div>
+        
+          
+        
+    <div >
+      <h3 class="modal-footer">Conclusion</h3>
+      <div class="modal-body">
+        <p>Ectasy might look like a normal pill. It might look freindly to some. But, I can tell you, it is not. Nothing about this drug is safe. It is a very harmful substance that should be avoided at all costs. </p>
+        
+     <center> <a href="https://www.drugabuse.gov/publications/drugfacts/mdma-ecstasymolly">More Info</a></center>
+     </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- marijana -->
+<div id="marijana" class="modal">
+
+ <div class="modal-content">
+    <div class="modal-header">
+      <span onclick="closeModal('marijana')" class="close">&times;</span>
+      <h2>Marijana- More Info</h2>
+    </div>
+    <div class="modal-body">
+      <div class="row">
+        <div class="column">
+          <h4>Short term effects</h4>
+          <ol>
+            <li>Altered senses- time, colors, .etc..</li>
+            <li>impaired body movment</li>
+            <li>impaired memory</li>
+            <li>hallucinations</li>
+            <li>changes in mood</li>
+          </ol>
+        </div>
+        <div class="column">
+          <h4>Long term effects</h4>
+          <ol>
+            <li>Breathing Issues</li>
+            <li>Incrase in heart rate</li>
+            <li>Cannabinoid Hyperemesis Syndrome- Cycles of vomiting, nausea waves, and somtimes immidate requirement for medical attention</li>
+          </ol>
+        </div>
+
+      </div>
+              
+    </div>
+        
+          
+        
+    <div >
+      <h3 class="modal-footer">Conclusion</h3>
+      <div class="modal-body">
+        <p>Marijana can really hurt you. This drug mostly effects your senses. It ticks your senses and that can literly and figuritivly off-balance you in many different ways. </p>
+        </div>
+     <center> <a href="https://www.drugabuse.gov/publications/drugfacts/marijuana">More Info</a></center>
+    </div>
+  </div>
+
+</div>
+
+
+
+<!-- lsd -->
+<div id="lsd" class="modal">
+
+ <div class="modal-content">
+    <div class="modal-header">
+      <span onclick="closeModal('lsd')" class="close">&times;</span>
+      <h2>Marijana- More Info</h2>
+    </div>
+    <div class="modal-body">
+      <div class="row">
+        <div class="column">
+          <h4>Short term effects</h4>
+          <ol>
+            <li>Dizziness and sleeplessness</li>
+            <li>Numbness, weakness, and tremors</li>
+            <li>'Trips'</li>
+            <li>hallucinations</li>
+            <li>Impulsiveness and rapid emotional shifts</li>
+          </ol>
+        </div>
+        
+        
+
+      </div>
+              
+    </div>
+        
+          
+        
+    <div >
+      <h3 class="modal-footer">Conclusion</h3>
+      <div class="modal-body">
+        <p>LSD and the other Hallucinogens can serously hurt you. In the name of these drugs you can ind 'hallucenation'. Most people know that that means seing something or hearing or feeling something that isn't there. If you think about it, that is not good. If this destroys your senses, then what would be left of you to try to live normally? These drugs should be avoided.</p>
+        </div>
+     <center> <a href="https://www.drugabuse.gov/publications/research-reports/hallucinogens-dissociative-drugs/how-do-hallucinogens-lsd-psilocybin-peyote-dmt-ayahuasca-affect-brain-body">More Info</a></center>
+    </div>
+  </div>
+
+</div>
+
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
+
+
+</xmp>
+  </div>
+
+
+
+
+<!-- Modals -->
+
+
+
+<!-- Cocain-->
+
+<div id="cocain" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span onclick="closeModal('cocain')" class="close">&times;</span>
+      <h2>Cocaine- More Info</h2>
+    </div>
+    <div class="modal-body">
+    
+      <div class="row">
+  <div class="column">
+    <h4>Short Term</h4>
+   <i>If taken in very small amounts</i>
+<ol>
+        <li>Makes you very alert and very talkative</li>
+        <li>Reduces need for sleep and food.</li>
+        <li>Hypersensetive</li>
+        <li>Increased heart rate and blood pressure</li>
+        <li>Muscle twitches</li>
+        <li>Constrictred blood vessels</li>
+        </ol>
+   
+  </div>
+     <div class="column" >
+           <h4>Long Term</h4>
+           <p>There are many bad effects on a lot of vital organs </p>
+           <ol>
+             <li>Brain- With repeated use, this can stop dopamine from being produced natrually.</li>
+             <li>Heart- Makes it age much faster. It forces the circulatory system to work overtime- causes heart disease, constricts blood vessels, increase blood pressure.</li>
+             <li>Lungs- lung damgae. Shortness of breath, chest pain, and disease and illness such as pneumonia and other chronic ilnesses.</li>
+             </ol>
+              
+          </div>
+        
+          
+        </div>
+      
+    </div>
+      <h3 class="modal-footer">Conclusion</h3>
+          <div class="modal-body">
+
+        <p>Cocaine is clearly really bad for you. As you can tell, if you only look at the short terms, you could think that it wasn't deadly. Looking at the long term conditions, you are able to tell that <b>Cocaine is in fact a deadly substance.</b></p>
+        
+     <center> <a href="https://vertavahealth.com/cocaine/long-term-effects/">More Info</a></center>
+    </div>
+  </div>
+
+</div>
+
+
+
+<!--Heroin-->
+<div id="heroin" class="modal">
+
+ <div class="modal-content">
+    <div class="modal-header">
+      <span onclick="closeModal('heroin')" class="close">&times;</span>
+      <h2>Heroin- More Info</h2>
+          </div>
+    <div class="modal-body">
+      <div class="row">
+        <div class="column">
+          <h4>Short term Effects</h4>
+          <ol>
+            <li>Dry mouth</li>
+         <li>Warm flushing of the skin</li>
+        <li>Heavy feeling in the arms and legs</li>
+        <li>Nausea and vomiting</li>
+        <li>Severe itching</li>
+        <li>Clouded mental functioning</li>
+        </ol>
+        <p><i>Directly From <a href="https://www.drugabuse.gov/publications/drugfacts/heroin">drugabuse.gove</a></i></p>
+          </div>
+          <div class="column">
+            <h4>Long term Effects</h4>
+            <ol>
+             <li>Vein Damage- Viens can collapse from injection</li>
+          <li>Neisel Damage- Nose and mouth can be damaged from sniffing/inhaling it</li>
+          <li>Heart- Infection of the lining</li>
+          <li>Liver and kidney disease</li>
+          <li>Reproductive system issues</li>
+          </ol>
+          </div>
+        </div>
+
+      
+              
+    </div>
+        
+          
+        
+      <h3 class="modal-footer">Conclusion</h3>
+    
+<div class="modal-body">
+         
+  <p>Heroin is a very addictive substance. It diseases a lot of important organs. Heroin is also many times mixed with other bad substances, when sold on the street. </p>
+
+        
+     <center> <a href="https://www.drugabuse.gov/publications/drugfacts/heroin">More Info</a></center>
+    </div>
+  </div>
+
+</div>
+
+
+
+<!-- Meth -->
+<div id="meth" class="modal">
+
+ <div class="modal-content">
+    <div class="modal-header">
+      <span onclick="closeModal('meth')" class="close">&times;</span>
+      <h2>Methamphetamine- More Info</h2>
+    </div>
+    <div class="modal-body">
+      <div class='row'>
+        <div class="column">
+          <h4>Short term effects</h4>
+          <ol>
+<li>decreased appetite</li>
+<li>faster breathing</li>
+<li>rapid and/or irregular heartbeat</li>
+<li>increased blood pressure and body temperature </li>
+</ol>
+        </div>
+        <div class="column">
+          <ol>
+            <li>Exetreme dental issues (meth mouth)</li>
+            <li>Confuesion</li>
+            <li>Memory Loss</li>
+            <li>violent behavior</li>
+            <li>Distress of others</li>
+            <li>hallucinations</li>
+            </ol>
+          </div>
+      </div>
+
+
+      
+              
+    </div>
+        
+          
+        
+      <h3 class="modal-footer">Conclusion</h3>
+    
+<div class="modal-body">
+        <p>Meth is a very harmful substance. This drug doesn't only affect your brain, but also your more phisical being. It seems to destroy anyting that it touches. Don't let it touch you!</p>
+    
+     <center> <a href="https://www.drugabuse.gov/publications/drugfacts/name">More Info</a></center>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- ectasy -->
+<div id="ectasy" class="modal">
+
+ <div class="modal-content">
+    <div class="modal-header">
+      <span onclick="closeModal('ectasy')" class="close">&times;</span>
+      <h2>Ectasy- More Info</h2>
+      
+    </div>
+    <div class="modal-body">
+      <p>This drug is also known as MDMA. This drugs mostly hurts and affects emotions, feelings, and heart rate blood pressure. Most of the effects are very severe:</p>
+      <ol>
+        <li>sweating</li>
+        <li>blurred vision</li>
+        <li>anxiety</li>
+        <li>Regulation Tempeture</li>
+        <li>Liver/Kidney/Heart- Organ Failure</li>
+
+        </ol>
+              
+    </div>
+        
+          
+        
+    <div >
+      <h3 class="modal-footer">Conclusion</h3>
+      <div class="modal-body">
+        <p>Ectasy might look like a normal pill. It might look freindly to some. But, I can tell you, it is not. Nothing about this drug is safe. It is a very harmful substance that should be avoided at all costs. </p>
+        
+     <center> <a href="https://www.drugabuse.gov/publications/drugfacts/mdma-ecstasymolly">More Info</a></center>
+     </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- marijana -->
+<div id="marijana" class="modal">
+
+ <div class="modal-content">
+    <div class="modal-header">
+      <span onclick="closeModal('marijana')" class="close">&times;</span>
+      <h2>Marijana- More Info</h2>
+    </div>
+    <div class="modal-body">
+      <div class="row">
+        <div class="column">
+          <h4>Short term effects</h4>
+          <ol>
+            <li>Altered senses- time, colors, .etc..</li>
+            <li>impaired body movment</li>
+            <li>impaired memory</li>
+            <li>hallucinations</li>
+            <li>changes in mood</li>
+          </ol>
+        </div>
+        <div class="column">
+          <h4>Long term effects</h4>
+          <ol>
+            <li>Breathing Issues</li>
+            <li>Incrase in heart rate</li>
+            <li>Cannabinoid Hyperemesis Syndrome- Cycles of vomiting, nausea waves, and somtimes immidate requirement for medical attention</li>
+          </ol>
+        </div>
+
+      </div>
+              
+    </div>
+        
+          
+        
+    <div >
+      <h3 class="modal-footer">Conclusion</h3>
+      <div class="modal-body">
+        <p>Marijana can really hurt you. This drug mostly effects your senses. It ticks your senses and that can literly and figuritivly off-balance you in many different ways. </p>
+        </div>
+     <center> <a href="https://www.drugabuse.gov/publications/drugfacts/marijuana">More Info</a></center>
+    </div>
+  </div>
+
+</div>
+
+
+
+<!-- lsd -->
+<div id="lsd" class="modal">
+
+ <div class="modal-content">
+    <div class="modal-header">
+      <span onclick="closeModal('lsd')" class="close">&times;</span>
+      <h2>Marijana- More Info</h2>
+    </div>
+    <div class="modal-body">
+      <div class="row">
+        <div class="column">
+          <h4>Short term effects</h4>
+          <ol>
+            <li>Dizziness and sleeplessness</li>
+            <li>Numbness, weakness, and tremors</li>
+            <li>'Trips'</li>
+            <li>hallucinations</li>
+            <li>Impulsiveness and rapid emotional shifts</li>
+          </ol>
+        </div>
+        
+        
+
+      </div>
+              
+    </div>
+        
+          
+        
+    <div >
+      <h3 class="modal-footer">Conclusion</h3>
+      <div class="modal-body">
+        <p>LSD and the other Hallucinogens can serously hurt you. In the name of these drugs you can ind 'hallucenation'. Most people know that that means seing something or hearing or feeling something that isn't there. If you think about it, that is not good. If this destroys your senses, then what would be left of you to try to live normally? These drugs should be avoided.</p>
+        </div>
+     <center> <a href="https://www.drugabuse.gov/publications/research-reports/hallucinogens-dissociative-drugs/how-do-hallucinogens-lsd-psilocybin-peyote-dmt-ayahuasca-affect-brain-body">More Info</a></center>
+    </div>
+  </div>
+
+</div>
+
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
+
